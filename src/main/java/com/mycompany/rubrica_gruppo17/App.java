@@ -34,6 +34,7 @@ public class App extends Application {
     public static void main(String[] args) {
         System.out.println("Boh");
         System.out.println("ciao sono kekko");
+        System.out.println("prova");
         launch();
     }
 
