@@ -35,6 +35,7 @@ public class App extends Application {
         System.out.println("Boh");
         System.out.println("ciao sono kekko");
         System.out.println("prova");
+        System.out.println("altra prova dom");
         launch();
     }
 
