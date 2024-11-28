@@ -39,6 +39,7 @@ public class App extends Application {
         System.out.println("BRAVO DOM");
         System.out.println("BRAVO DOM, complimenti!");
         System.out.println("BRAVO DOM, complimentoni!");
+        System.out.println("BRAVO DOM, complimentionioni!");
         launch();
     }
 
