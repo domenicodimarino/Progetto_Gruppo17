@@ -38,6 +38,7 @@ public class App extends Application {
         System.out.println("altra prova dom");
         System.out.println("BRAVO DOM");
         System.out.println("BRAVO DOM, complimenti!");
+        System.out.println("BRAVO DOM, complimentoni!");
         launch();
     }
 
