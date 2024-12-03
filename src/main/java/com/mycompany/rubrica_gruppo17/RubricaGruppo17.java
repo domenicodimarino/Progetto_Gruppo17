@@ -9,9 +9,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX App
+ * JavaFX RubricaGruppo17
  */
-public class App extends Application {
+public class RubricaGruppo17 extends Application {
 
     private static Scene scene;
 
@@ -27,20 +27,11 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RubricaGruppo17.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
     public static void main(String[] args) {
-        System.out.println("Boh");
-        System.out.println("ciao sono kekko");
-        System.out.println("prova");
-        System.out.println("altra prova dom");
-        System.out.println("BRAVO DOM");
-        System.out.println("BRAVO DOM, complimenti!");
-        System.out.println("BRAVO DOM, complimentionioni!");
-        System.out.println("BRAVO DOM, complimentoni!");
-        System.out.println("prova github!");
         launch();
     }
 
