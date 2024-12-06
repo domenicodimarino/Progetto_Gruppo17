@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".SecondaryController">
+   <children>
+      <SplitPane dividerPositions="0.29264214046822745" layoutX="200.0" layoutY="120.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="136.0">
+               <children>
+                  <VBox layoutX="37.0" layoutY="184.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <TextField fx:id="numberFieldCreate">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="addNumber" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" text="Aggiungi numero">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <TextField fx:id="emailFieldCreate">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="addEmail" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" text="Aggiungi email">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="exitButton" mnemonicParsing="false" text="Annulla operazione">
+                           <VBox.margin>
+                              <Insets left="21.0" top="120.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="saveButton" mnemonicParsing="false" text="Salva modifiche">
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="160.0" layoutY="99.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="409.0">
+                           <children>
+                              <Label fx:id="informationLabel" alignment="CENTER" layoutX="83.0" layoutY="15.0" text="Informazioni contatto" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <HBox prefHeight="52.0" prefWidth="409.0">
+                           <children>
+                              <Label fx:id="nameLabel" text="Nome">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="nameTextField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="61.0" prefWidth="409.0">
+                           <children>
+                              <Label fx:id="surnameLabel" text="Cognome">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="surnameTextField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="189.0" prefWidth="409.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="209.0">
+                                 <children>
+                                    <Label fx:id="numberLabel1" text="Numero di telefono 1">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="numberTextField1">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label fx:id="numberLabel2" text="Numero di telefono 2">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="numberTextField2">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label fx:id="numberLabel3" text="Numero di telefono 3">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="numberTextField3">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="222.0">
+                                 <children>
+                                    <Label fx:id="emailLabel1" text="Indirizzo email 1">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="emailTextField1" prefHeight="27.0" prefWidth="191.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </padding>
+                                    </TextField>
+                                    <Label fx:id="emailLabel2" text="Indirizzo email 2">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="emailTextField2">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label fx:id="emailLabel3" text="Indirizzo email 3">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="3.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="emailTextField3">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
