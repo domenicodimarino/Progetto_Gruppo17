@@ -1,4 +1,4 @@
-package com.mycompany.rubrica_gruppo17;
+package it.unisa.softeng.rubricagrp17;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,9 +9,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX RubricaGruppo17
+ * JavaFX App
  */
-public class RubricaGruppo17 extends Application {
+public class App extends Application {
 
     private static Scene scene;
 
@@ -22,12 +22,12 @@ public class RubricaGruppo17 extends Application {
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(RubricaGruppo17.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
