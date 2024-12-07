@@ -5,14 +5,10 @@
  */
 package it.unisa.softeng.rubricagrp17.exceptions;
 
-/**
- *
- * @author giovanniadinolfi03
- */
 
 /**
  * @file RubricaException.java
- * @brief Superclasse delle eccezioni presenti nel progetto
+ * @brief Superclasse delle eccezioni presenti nel progetto.
  */
 
 public class RubricaException extends Exception{

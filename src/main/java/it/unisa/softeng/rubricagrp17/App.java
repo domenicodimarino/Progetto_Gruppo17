@@ -15,6 +15,7 @@ import java.io.IOException;
 /**
  * 
  * @file App.java
+ * @brief Main dell'Applicazione 
  */
 
 public class App extends Application {

@@ -5,10 +5,6 @@
  */
 package it.unisa.softeng.rubricagrp17.exceptions;
 
-/**
- *
- * @author giovanniadinolfi03
- */
 
 /**
  * @file NominativoAssenteException.java

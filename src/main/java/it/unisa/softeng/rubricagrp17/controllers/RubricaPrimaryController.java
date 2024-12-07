@@ -71,10 +71,12 @@ public class RubricaPrimaryController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //DA IMPLEMENTARE
     }
+    
     private void initBindings(){
         //DA IMPLEMENTARE
     }
@@ -88,6 +90,7 @@ public class RubricaPrimaryController implements Initializable {
     private void importaRubrica(ActionEvent event) {
         //DA IMPLEMENTARE
     }
+    
     @FXML
     private void esportaRubrica(ActionEvent event) throws IOException {
         //DA IMPLEMENTARE
@@ -101,10 +104,12 @@ public class RubricaPrimaryController implements Initializable {
     private void modificaContatto(ActionEvent event) {
         //DA IMPLEMENTARE
     }
+    
     @FXML
     private void eliminaContatto(ActionEvent event) {
         //DA IMPLEMENTARE
     }
+    
     @FXML
     private void ricercaContatto(ActionEvent event) {
         //DA IMPLEMENTARE
