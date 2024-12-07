@@ -1,0 +1,136 @@
+\doxysection{it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email Class Reference}
+\hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{}\label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1c574fc0f56fae63d4018315f00c65d7}{Email}} ()
+\begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a9a727bdf4c5cb99810fb36ed5348cc0a}{aggiungi\+Email}} (String mail)
+\begin{DoxyCompactList}\small\item\em Metodo che aggiunge un email alle informazioni del contatto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1483dc977b2443657d45b7d3758e302a}{modifica\+Email}} (String mail, int index)
+\begin{DoxyCompactList}\small\item\em Metodo che modifica un indirizzo email di un contatto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a98f6a20c2aa723f72d3a2c931ddbbd8e}{rimuovi\+Email}} (int index)
+\begin{DoxyCompactList}\small\item\em Metodo che rimuove un indirizzo email di un contatto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a65974336765891ae65c612c434a38ea2}{get\+Cont\+Email}} ()
+\begin{DoxyCompactList}\small\item\em Metodo che restituisce il numero di email del contatto. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_af3da1641295f1ae987c850a1f36c78a3}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metodo che restituisce le email sotto forma di stringa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1c574fc0f56fae63d4018315f00c65d7}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!Email@{Email}}
+\index{Email@{Email}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{Email()}{Email()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1c574fc0f56fae63d4018315f00c65d7} 
+it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Costruttore della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}. 
+
+\begin{DoxyPostcond}{Postcondition}
+Viene creata un\textquotesingle{}istanza della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a9a727bdf4c5cb99810fb36ed5348cc0a}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!aggiungiEmail@{aggiungiEmail}}
+\index{aggiungiEmail@{aggiungiEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{aggiungiEmail()}{aggiungiEmail()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a9a727bdf4c5cb99810fb36ed5348cc0a} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+aggiungi\+Email (\begin{DoxyParamCaption}\item[{String}]{mail}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che aggiunge un email alle informazioni del contatto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mail} & \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email} del contatto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Viene fornita una stringa non nulla. 
+
+Il contatto ha meno di tre email. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Viene aggiunta l\textquotesingle{}email al contatto. 
+\end{DoxyPostcond}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a65974336765891ae65c612c434a38ea2}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!getContEmail@{getContEmail}}
+\index{getContEmail@{getContEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{getContEmail()}{getContEmail()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a65974336765891ae65c612c434a38ea2} 
+int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+get\+Cont\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che restituisce il numero di email del contatto. 
+
+\begin{DoxyReturn}{Returns}
+Numero di email. 
+\end{DoxyReturn}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1483dc977b2443657d45b7d3758e302a}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!modificaEmail@{modificaEmail}}
+\index{modificaEmail@{modificaEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{modificaEmail()}{modificaEmail()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a1483dc977b2443657d45b7d3758e302a} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+modifica\+Email (\begin{DoxyParamCaption}\item[{String}]{mail}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che modifica un indirizzo email di un contatto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mail} & \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email} del contatto. \\
+\hline
+{\em index} & Indice dell\textquotesingle{}array di email presenti nel contatto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Indice deve corrisponde a un indirizzo email presente nella lista del contatto. 
+
+Viene fornita una stringa non nulla. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+L\textquotesingle{}email indicata viene modificata. 
+\end{DoxyPostcond}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a98f6a20c2aa723f72d3a2c931ddbbd8e}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!rimuoviEmail@{rimuoviEmail}}
+\index{rimuoviEmail@{rimuoviEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{rimuoviEmail()}{rimuoviEmail()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_a98f6a20c2aa723f72d3a2c931ddbbd8e} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+rimuovi\+Email (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che rimuove un indirizzo email di un contatto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indice dell\textquotesingle{}array di email presenti nel contatto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Indice deve corrisponde a un indirizzo email presente nella lista del contatto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+L\textquotesingle{}email indicata viene eliminata. 
+\end{DoxyPostcond}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_af3da1641295f1ae987c850a1f36c78a3}\index{it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}!toString@{toString}}
+\index{toString@{toString}!it.unisa.softeng.rubricagrp17.contactmanager.Email@{it.unisa.softeng.rubricagrp17.contactmanager.Email}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email_af3da1641295f1ae987c850a1f36c78a3} 
+String it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Email.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che restituisce le email sotto forma di stringa. 
+
+\begin{DoxyReturn}{Returns}
+Stringa contenente le email del contatto. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/it/unisa/softeng/rubricagrp17/contactmanager/\mbox{\hyperlink{_email_8java}{Email.\+java}}\end{DoxyCompactItemize}

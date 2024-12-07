@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['telefono_0',['Telefono',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono.html',1,'it.unisa.softeng.rubricagrp17.contactmanager.Telefono'],['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono.html#a3b5482b241bcc71ec0b7bc9e81e4f786',1,'it.unisa.softeng.rubricagrp17.contactmanager.Telefono.Telefono()']]],
+  ['telefono_2ejava_1',['Telefono.java',['../_telefono_8java.html',1,'']]],
+  ['tostring_2',['toString',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html#a2e01fa5fe5602819dff2ee0e86b6f1f5',1,'it.unisa.softeng.rubricagrp17.contactmanager.Contatto.toString()'],['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email.html#af3da1641295f1ae987c850a1f36c78a3',1,'it.unisa.softeng.rubricagrp17.contactmanager.Email.toString()'],['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica.html#a0d64d3162b1b0e3c7711e1651919171c',1,'it.unisa.softeng.rubricagrp17.contactmanager.Rubrica.toString()'],['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono.html#af16b9a23247f963e13ad4c9e87f06959',1,'it.unisa.softeng.rubricagrp17.contactmanager.Telefono.toString()']]]
+];
