@@ -47,7 +47,7 @@ public class EmailTest {
     public void testConstructor() {
         System.out.println("Testing constructor (Email)");
         
-        ArrayList<String> expResult = new ArrayList<>();
+        ArrayList<String> expResult= new ArrayList<>();
         
         assertEquals(expResult.size(),mail.getEmail().size());
     }
@@ -68,6 +68,7 @@ public class EmailTest {
         mail.aggiungiEmail(expResult.getSingolaEmail(2));
         assertEquals(expResult.getEmail(),mail.getEmail());
     }
+    
     /**
      * Test of aggiungiEmail method, of class Email.
      * aggiungiEmail con 3 email già presenti.
@@ -87,6 +88,7 @@ public class EmailTest {
         mail.aggiungiEmail("mariorossi@example.com");
         assertEquals(expResult.getEmail(),mail.getEmail());
     }
+    
     /**
      * Test of getSize method, of class Email.
      */
@@ -134,6 +136,7 @@ public class EmailTest {
         String expResult = "Email{[domenicodimarino@example.com, giovanniadinolfi@example.com, francescodicrescenzo@example.com]}";
         assertEquals(expResult, mail.toString());
     }
+    
     /**
      * Test of equals method, of class Email.
      * classico
@@ -149,6 +152,7 @@ public class EmailTest {
         
         assertTrue(expResult.equals(mail));
     }
+    
     /**
      * Test of equals method, of class Email.
      * (obj == null)
@@ -163,6 +167,7 @@ public class EmailTest {
         
         assertFalse(expResult.equals(null));
     }
+    
     /**
      * Test of equals method, of class Email.
      * classi diverse 
@@ -178,6 +183,7 @@ public class EmailTest {
         
         assertFalse(expResult.equals(mail));
     }
+    
     /**
      * Test of setEmail method, of class Email.
      */
