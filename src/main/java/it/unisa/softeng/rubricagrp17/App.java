@@ -31,7 +31,6 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("RubricaPrimaryView"), 750, 450);
         stage.setScene(scene);
-        stage.setResizable(false);
         stage.show();
     }
 
