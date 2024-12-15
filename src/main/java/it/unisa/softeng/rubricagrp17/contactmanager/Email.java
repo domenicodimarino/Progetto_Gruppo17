@@ -6,14 +6,16 @@
 package it.unisa.softeng.rubricagrp17.contactmanager;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * @file Email.java
  * @brief Rappresenta un insieme di indirizzi email associati ad un contatto.
  */
 public class Email {
-    private ArrayList<String> email;
-    private int contEmail;
+    private List<String> email;
+    
     
     /**
     * @brief Costruttore della classe Email.
@@ -21,7 +23,7 @@ public class Email {
     * @post Viene creata un'istanza della classe Email.
     */
     public Email(){
-        //DA IMPLEMENTARE
+        email= new ArrayList<>();
     }
     
    /**
@@ -34,43 +36,88 @@ public class Email {
      * @post Viene aggiunta l'email al contatto.
      */
     public void aggiungiEmail(String mail){
-        //DA IMPLEMENTARE
+        if(this.getSize() == 3)
+            return;
+        email.add(mail);
     }
     
     /**
-     * @brief Metodo che modifica un indirizzo email di un contatto.
+     * @brief Metodo get per il numero di email del contatto.
      * 
-     * @param mail Email del contatto.
-     * @param index Indice dell'array di email presenti nel contatto.
-     * 
-     * @pre Indice deve corrisponde a un indirizzo email presente nella lista del contatto.
-     * @pre Viene fornita una stringa non nulla.
-     * @post L'email indicata viene modificata.
+     * @return Il numero di indirizzi email del contatto.
      */
-    public void modificaEmail(String mail, int index){
-        //DA IMPLEMENTARE
+    public int getSize(){
+    return this.email.size();
     }
     
-     /**
-     * @brief Metodo che rimuove un indirizzo email di un contatto.
-     * 
-     * @param index Indice dell'array di email presenti nel contatto.
-     * 
-     * @pre Indice deve corrisponde a un indirizzo email presente nella lista del contatto.
-     * @post L'email indicata viene eliminata.
-     */
-    public void rimuoviEmail(int index){
-        //DA IMPLEMENTARE
-    }
-
     /**
-     * @brief Metodo che restituisce il numero di email del contatto.
+     * @brief Metodo get della lista di email.
      * 
-     * @return Numero di email.
+     * @return La lista di email.
      */
-    public int getContEmail() {
-        //DA IMPLEMENTARE
-        return 0;
+    public List<String> getEmail(){
+    return email;
+    }
+    
+    /**
+     * @brief Metodo get di una singola mail presente in lista.
+     * 
+     * @param index L'indice della email nella lista.
+     * 
+     * @return La stringa email corrispondente all'indice passato.
+     */
+    public String getSingolaEmail(int index){
+        return email.get(index);
+    }
+    
+    /**
+     * @brief Metodo set del campo email.
+     * 
+     * Sostituisce la lista di email presente con la lista passata come parametro.
+     * 
+     * @param email La nuova lista di email.
+     * 
+     * @post La lista è aggiornata e i valori corrispondono a quelli passati come parametro.
+     */
+    public void setEmail(List<String> email){
+        this.email= email;
+    }
+    
+    /**
+     * @brief Override del metodo hashCode.
+     * 
+     * @return Valore hash di Email.
+     */
+    @Override 
+    public int hashCode(){
+    int hash = 7;
+    hash = 19 * hash + Objects.hashCode(this.email);
+    return hash;
+    }
+    
+    /**
+     * @brief Override del metodo equals.
+     * 
+     * @param obj Oggetto Email di confronto.
+     * 
+     * @return Il risultato del confronto tra due oggetti Email.
+     */
+    @Override
+    public boolean equals(Object obj){
+    if(this == obj){
+        return true;
+    }
+    if(this == null){
+        return false;
+    }
+    if(getClass() != obj.getClass()){
+        return false;
+    }
+    final Email other= (Email) obj;
+    if(!Objects.equals(this.email, other.email)){
+        return false;
+    }
+        return true;
     }
     
     /**
@@ -80,7 +127,6 @@ public class Email {
      */
     @Override
     public String toString() {
-        //DA IMPLEMENTARE
-        return null;
+        return "Email{" + email + '}';
     }
 }

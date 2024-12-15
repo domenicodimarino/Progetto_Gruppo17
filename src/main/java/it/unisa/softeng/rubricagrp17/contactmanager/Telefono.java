@@ -7,6 +7,7 @@ package it.unisa.softeng.rubricagrp17.contactmanager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @file Telefono.java
@@ -14,7 +15,6 @@ import java.util.List;
  */
 public class Telefono {
     private List<String> numeri;
-    private int contNumeri;
     
     /**
     * @brief Costruttore della classe Telefono.
@@ -22,7 +22,7 @@ public class Telefono {
     * @post Viene creata un'istanza della classe Telefono.
     */
     public Telefono(){
-        //DA IMPLEMENTARE
+        numeri = new ArrayList<>();
     }
     
     /**
@@ -35,45 +35,90 @@ public class Telefono {
      * @post Viene aggiunto il numero al contatto.
      */
     public void aggiungiNumero(String numero){
-        //DA IMPLEMENTARE
+        if(this.getSize()==3)
+            return;
+        numeri.add(numero);
     }
     
     /**
-     * @brief Metodo che modifica un numero di un contatto.
+     * @brief Metodo get per la quantità di numeri telefonici del contatto.
      * 
-     * @param numero Numero del contatto.
-     * @param index Indice dell'array di numeri presenti nel contatto.
-     * 
-     * @pre Indice deve corrisponde a un numero presente nella lista del contatto.
-     * @pre Viene fornita una stringa non nulla.
-     * @post Il numero indicato viene modificato.
+     * @return La quantità di numeri telefonici del contatto.
      */
-    public void modificaNumero(String numero, int index){
-        //DA IMPLEMENTARE
+    public int getSize(){
+    return this.numeri.size();
     }
     
     /**
-     * @brief Metodo che rimuove un numero di un contatto.
+     * @brief Metodo che restituisce la lista di numeri.
      * 
-     * @param index Indice dell'array di numeri presenti nel contatto.
-     * 
-     * @pre Indice deve corrisponde a un numero presente nella lista del contatto.
-     * @post Il numero indicato viene eliminato.
+     * @return La lista di numeri.
      */
-    public void rimuoviNumero(int index){
-       //DA IMPLEMENTARE
-    }
+    public List<String> getNumeri(){
+    return numeri;
+       }
     
     /**
-     * @brief Metodo che restituisce la quantità di numeri del contatto.
+     * @brief Metodo che restituisce un singolo numero dalla lista.
      * 
-     * @return Quantità di numeri.
+     * @param index L'indice del singolo numero presente nella lista.
+     * 
+     * @return Il numero corrispondente all'indice passato come parametro.
      */
-    public int getContNumeri(){
-        //DA IMPLEMENTARE
-        return 0;
+    public String getSingoloNumero(int index){
+        return numeri.get(index);
     }
 
+    /**
+     * @brief Metodo set del campo numeri.
+     * 
+     * Sostituisce la lista di numeri presente con la lista passata come parametro.
+     * 
+     * @param numeri La nuova lista di numeri.
+     * 
+     * @post La lista è aggiornata e i valori corrispondono a quelli passati come parametro.
+     */
+    public void setNumeri(List<String> numeri){
+    this.numeri=numeri;
+    }
+    
+    /**
+     * @brief Override del metodo hashCode.
+     * 
+     * @return Valore hash di Telefono.
+     */
+   @Override
+    public int hashCode(){
+       int hash = 7; 
+       hash = 17 * hash + Objects.hashCode(this.numeri);
+       return hash;
+    }
+    
+    /**
+     * @brief Override del metodo equals.
+     * 
+     * @param obj Oggetto Telefono di confronto.
+     * 
+     * @return Il risultato del confronto tra due oggetti Telefono.
+     */
+    @Override
+    public boolean equals(Object obj){
+    if(this == obj){
+        return true;
+    }
+    if(this == null){
+    return false;
+    }
+    if(getClass() != obj.getClass()){
+    return false;
+    }
+    final Telefono other = (Telefono)obj;
+    if(!Objects.equals(this.numeri,other.numeri)){
+        return false;
+    }
+    return true;
+    }
+            
     /**
      * @brief Metodo che restituisce i numeri sotto forma di stringa.
      * 
@@ -81,7 +126,6 @@ public class Telefono {
      */
     @Override
     public String toString() {
-        //DA IMPLEMENTARE
-        return null;
+        return "Telefono{" + numeri + '}';
     }
 }
