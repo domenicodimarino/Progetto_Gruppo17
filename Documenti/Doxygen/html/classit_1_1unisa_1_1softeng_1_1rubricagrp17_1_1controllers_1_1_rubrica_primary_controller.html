@@ -104,9 +104,46 @@ Inheritance diagram for it.unisa.softeng.rubricagrp17.controllers.RubricaPrimary
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc10c1b6c0460d0f20964e963437cb45" id="r_afc10c1b6c0460d0f20964e963437cb45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc10c1b6c0460d0f20964e963437cb45">initialize</a> (URL url, ResourceBundle rb)</td></tr>
+<tr class="memdesc:afc10c1b6c0460d0f20964e963437cb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializza il controller e configura gli elementi dell'interfaccia grafica.  <br /></td></tr>
 <tr class="separator:afc10c1b6c0460d0f20964e963437cb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166f2f89ee539d388702ec32bcbb2f77" id="r_a166f2f89ee539d388702ec32bcbb2f77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166f2f89ee539d388702ec32bcbb2f77">aggiungiContattoCompleto</a> (<a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a> nuovoContatto)</td></tr>
+<tr class="memdesc:a166f2f89ee539d388702ec32bcbb2f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggiunge un nuovo contatto con più numeri/email alla rubrica e aggiorna la tabella.  <br /></td></tr>
+<tr class="separator:a166f2f89ee539d388702ec32bcbb2f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f79a39f2b660d40f206559f4d81d15" id="r_a76f79a39f2b660d40f206559f4d81d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76f79a39f2b660d40f206559f4d81d15">salvaModifiche</a> (<a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a> c)  throws <a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception.html">NominativoAssenteException</a></td></tr>
+<tr class="memdesc:a76f79a39f2b660d40f206559f4d81d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salva le modifiche apportate a un contatto esistente nella rubrica.  <br /></td></tr>
+<tr class="separator:a76f79a39f2b660d40f206559f4d81d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a166f2f89ee539d388702ec32bcbb2f77" name="a166f2f89ee539d388702ec32bcbb2f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166f2f89ee539d388702ec32bcbb2f77">&#9670;&#160;</a></span>aggiungiContattoCompleto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController.aggiungiContattoCompleto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a></td>          <td class="paramname"><span class="paramname"><em>nuovoContatto</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aggiunge un nuovo contatto con più numeri/email alla rubrica e aggiorna la tabella. </p>
+<p>Questo metodo consente di aggiungere un contatto completo alla rubrica e aggiorna la tabella per riflettere i cambiamenti</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nuovoContatto</td><td>Il contatto da aggiungere alla rubrica passato dal secondaryController. Deve essere un'istanza valida della classe <code>Contatto</code>, completa di tutte le informazioni necessarie</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>Aggiunge il nuovo contatto alla rubrica utilizzando il metodo <code>aggiungiContatto</code> della classe <code>Rubrica</code></li>
+<li>Dopo l'aggiunta, aggiorna la tabella per mostrare la lista aggiornata dei contatti recuperata dalla rubrica </li>
+</ul>
+
+</div>
+</div>
 <a id="afc10c1b6c0460d0f20964e963437cb45" name="afc10c1b6c0460d0f20964e963437cb45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc10c1b6c0460d0f20964e963437cb45">&#9670;&#160;</a></span>initialize()</h2>
 
@@ -125,7 +162,63 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes the controller class. </p>
+
+<p>Inizializza il controller e configura gli elementi dell'interfaccia grafica. </p>
+<p>Questo metodo è chiamato automaticamente dal framework JavaFX durante l'inizializzazione del controller. Si occupa di configurare il comportamento della <code>TableView</code> e delle sue colonne, e di stabilire i binding per i pulsanti dell'interfaccia</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>URL della risorsa utilizzata per localizzare l'oggetto FXML </td></tr>
+    <tr><td class="paramname">rb</td><td>Risorsa bundle per localizzare il testo utilizzato nell'interfaccia utente</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>Imposta il controller principale tramite <code><a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1_app.html#abd1bdc617c02c9e6443d2e43bd4104b2" title="Controller dell&#39;interfaccia primaria.">App.setPrimaryController</a></code></li>
+<li>Inizializza la lista osservabile dei contatti (<code>contatti</code>) associata alla <code>TableView</code></li>
+<li>Aggiorna i dati della tabella con un elenco aggiornato di contatti prelevati dal modello</li>
+<li>Configura le colonne della <code>TableView</code>:</li>
+<li><code>nameClm</code> visualizza il nome di ciascun contatto</li>
+<li><code>surnameClm</code> visualizza il cognome di ciascun contatto</li>
+<li>Chiama i metodi di supporto per:</li>
+<li>Inizializzare i binding delle proprietà (<code>initBindings</code>)</li>
+<li>Configurare la funzionalità di ricerca dei contatti (<code>ricercaContatto</code>) </li>
+</ul>
+
+</div>
+</div>
+<a id="a76f79a39f2b660d40f206559f4d81d15" name="a76f79a39f2b660d40f206559f4d81d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f79a39f2b660d40f206559f4d81d15">&#9670;&#160;</a></span>salvaModifiche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController.salvaModifiche </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td> throws <a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception.html">NominativoAssenteException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Salva le modifiche apportate a un contatto esistente nella rubrica. </p>
+<p>Questo metodo aggiorna un contatto esistente nella rubrica con i nuovi valori forniti e aggiorna la tabella per riflettere le modifiche</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Il contatto con i valori modificati da salvare passato dal secondaryController. Deve essere un'istanza valida della classe <code>Contatto</code>, con i dati aggiornati</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NominativoAssenteException</td><td>Se il nome e cognome del contatto sono assenti</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>Utilizza il metodo <code>modificaContatto</code> della classe <code>Rubrica</code> per aggiornare le informazioni del contatto specificato, come nome, cognome, numeri di telefono ed email</li>
+<li>Dopo la modifica, aggiorna la tabella per visualizzare la lista aggiornata dei contatti </li>
+</ul>
 
 </div>
 </div>

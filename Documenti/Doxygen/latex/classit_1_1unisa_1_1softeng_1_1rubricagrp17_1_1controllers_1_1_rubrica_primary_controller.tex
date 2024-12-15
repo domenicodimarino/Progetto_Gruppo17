@@ -10,17 +10,92 @@ Inheritance diagram for it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubr
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_afc10c1b6c0460d0f20964e963437cb45}{initialize}} (URL url, Resource\+Bundle rb)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inizializza il controller e configura gli elementi dell\textquotesingle{}interfaccia grafica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a166f2f89ee539d388702ec32bcbb2f77}{aggiungi\+Contatto\+Completo}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} nuovo\+Contatto)
+\begin{DoxyCompactList}\small\item\em Aggiunge un nuovo contatto con più numeri/email alla rubrica e aggiorna la tabella. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a76f79a39f2b660d40f206559f4d81d15}{salva\+Modifiche}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} c)  throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}
+\begin{DoxyCompactList}\small\item\em Salva le modifiche apportate a un contatto esistente nella rubrica. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_afc10c1b6c0460d0f20964e963437cb45}\index{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}!initialize@{initialize}}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a166f2f89ee539d388702ec32bcbb2f77}\index{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}!aggiungiContattoCompleto@{aggiungiContattoCompleto}}
+\index{aggiungiContattoCompleto@{aggiungiContattoCompleto}!it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}}
+\doxysubsubsection{\texorpdfstring{aggiungiContattoCompleto()}{aggiungiContattoCompleto()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a166f2f89ee539d388702ec32bcbb2f77} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubrica\+Primary\+Controller.\+aggiungi\+Contatto\+Completo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}}}]{nuovo\+Contatto}{}\end{DoxyParamCaption})}
+
+
+
+Aggiunge un nuovo contatto con più numeri/email alla rubrica e aggiorna la tabella. 
+
+Questo metodo consente di aggiungere un contatto completo alla rubrica e aggiorna la tabella per riflettere i cambiamenti
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuovo\+Contatto} & Il contatto da aggiungere alla rubrica passato dal secondary\+Controller. Deve essere un\textquotesingle{}istanza valida della classe {\ttfamily Contatto}, completa di tutte le informazioni necessarie\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item Aggiunge il nuovo contatto alla rubrica utilizzando il metodo {\ttfamily aggiungi\+Contatto} della classe {\ttfamily Rubrica}
+\item Dopo l\textquotesingle{}aggiunta, aggiorna la tabella per mostrare la lista aggiornata dei contatti recuperata dalla rubrica 
+\end{DoxyItemize}\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_afc10c1b6c0460d0f20964e963437cb45}\index{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}!initialize@{initialize}}
 \index{initialize@{initialize}!it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}}
 \doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_afc10c1b6c0460d0f20964e963437cb45} 
 void it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubrica\+Primary\+Controller.\+initialize (\begin{DoxyParamCaption}\item[{URL}]{url}{, }\item[{Resource\+Bundle}]{rb}{}\end{DoxyParamCaption})}
 
-Initializes the controller class. 
+
+
+Inizializza il controller e configura gli elementi dell\textquotesingle{}interfaccia grafica. 
+
+Questo metodo è chiamato automaticamente dal framework Java\+FX durante l\textquotesingle{}inizializzazione del controller. Si occupa di configurare il comportamento della {\ttfamily Table\+View} e delle sue colonne, e di stabilire i binding per i pulsanti dell\textquotesingle{}interfaccia
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & URL della risorsa utilizzata per localizzare l\textquotesingle{}oggetto FXML \\
+\hline
+{\em rb} & Risorsa bundle per localizzare il testo utilizzato nell\textquotesingle{}interfaccia utente\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item Imposta il controller principale tramite {\ttfamily \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1_app_abd1bdc617c02c9e6443d2e43bd4104b2}{App.\+set\+Primary\+Controller}}
+\item Inizializza la lista osservabile dei contatti ({\ttfamily contatti}) associata alla {\ttfamily Table\+View}
+\item Aggiorna i dati della tabella con un elenco aggiornato di contatti prelevati dal modello
+\item Configura le colonne della {\ttfamily Table\+View}\+:
+\item {\ttfamily name\+Clm} visualizza il nome di ciascun contatto
+\item {\ttfamily surname\+Clm} visualizza il cognome di ciascun contatto
+\item Chiama i metodi di supporto per\+:
+\item Inizializzare i binding delle proprietà ({\ttfamily init\+Bindings})
+\item Configurare la funzionalità di ricerca dei contatti ({\ttfamily ricerca\+Contatto}) 
+\end{DoxyItemize}\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a76f79a39f2b660d40f206559f4d81d15}\index{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}!salvaModifiche@{salvaModifiche}}
+\index{salvaModifiche@{salvaModifiche}!it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController}}
+\doxysubsubsection{\texorpdfstring{salvaModifiche()}{salvaModifiche()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_primary_controller_a76f79a39f2b660d40f206559f4d81d15} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubrica\+Primary\+Controller.\+salva\+Modifiche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}}}]{c}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}}
+
+
+
+Salva le modifiche apportate a un contatto esistente nella rubrica. 
+
+Questo metodo aggiorna un contatto esistente nella rubrica con i nuovi valori forniti e aggiorna la tabella per riflettere le modifiche
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Il contatto con i valori modificati da salvare passato dal secondary\+Controller. Deve essere un\textquotesingle{}istanza valida della classe {\ttfamily Contatto}, con i dati aggiornati\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nominativo\+Assente\+Exception} & Se il nome e cognome del contatto sono assenti\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyItemize}
+\item Utilizza il metodo {\ttfamily modifica\+Contatto} della classe {\ttfamily Rubrica} per aggiornare le informazioni del contatto specificato, come nome, cognome, numeri di telefono ed email
+\item Dopo la modifica, aggiorna la tabella per visualizzare la lista aggiornata dei contatti 
+\end{DoxyItemize}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

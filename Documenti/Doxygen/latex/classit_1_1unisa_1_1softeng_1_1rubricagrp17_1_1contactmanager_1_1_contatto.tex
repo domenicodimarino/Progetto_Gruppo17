@@ -9,9 +9,9 @@ Inheritance diagram for it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+C
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ef2f4a595748bf430b26d01f342a457}{Contatto}} (String nome, String cognome)
+\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ef2f4a595748bf430b26d01f342a457}{Contatto}} (String nome, String cognome)  throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}
 \begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto} fornendo nome e cognome. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a57f63bd33fc3b32ff43c3c630e8be171}{Contatto}} (String nome, String cognome, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}} numeri, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}} email)
+\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a57f63bd33fc3b32ff43c3c630e8be171}{Contatto}} (String nome, String cognome, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}} numeri, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}} email)  throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}} 
 \begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto} fornendo nome, cognome, numeri e email. \end{DoxyCompactList}\item 
 String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a4004d41917cbdaffca399b10fd584d43}{get\+Nome}} ()
 \begin{DoxyCompactList}\small\item\em Metodo get del Nome. \end{DoxyCompactList}\item 
@@ -21,24 +21,24 @@ String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactma
 \begin{DoxyCompactList}\small\item\em Metodo get dei Numeri. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}} \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a28cca21971b3c4a53f72b4d1341a7f92}{get\+Email}} ()
 \begin{DoxyCompactList}\small\item\em Metodo get delle \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ee4a6768e027e40e078e6a767473497}{set\+Nome}} (String nome)
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ee4a6768e027e40e078e6a767473497}{set\+Nome}} (String nome)  throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}} 
 \begin{DoxyCompactList}\small\item\em Metodo set del Nome. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa4f2489d9750b92cbe75152adcfcda5a}{set\+Cognome}} (String cognome)
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa4f2489d9750b92cbe75152adcfcda5a}{set\+Cognome}} (String cognome)  throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}} 
 \begin{DoxyCompactList}\small\item\em Metodo set del Cognome. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_abc3d288452598e765e6523eb46b29ba0}{aggiungi\+Numero}} (String numero)
 \begin{DoxyCompactList}\small\item\em Metodo che aggiunge un numero alle informazioni del contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6f6606aad5da0aec4561a879b05391c7}{modifica\+Numero}} (String numero, int index)
-\begin{DoxyCompactList}\small\item\em Metodo che modifica un numero di un contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ac3bfe877dd1f23d0f95cd1e7c8b48147}{elimina\+Numero}} (int index)
-\begin{DoxyCompactList}\small\item\em Metodo che elimina un numero di un contatto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a3159ec03d8adf051b97cefe3466782f0}{aggiungi\+Email}} (String email)
 \begin{DoxyCompactList}\small\item\em Metodo che aggiunge un email alle informazioni del contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ab455e700b0c8253f771ccb2b5e823b8b}{modifica\+Email}} (String email, int index)
-\begin{DoxyCompactList}\small\item\em Metodo che modifica un indirizzo email di un contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6952dde6d9907cf6c8ce6c3d51462539}{elimina\+Email}} (int index)
-\begin{DoxyCompactList}\small\item\em Metodo che elimina un indirizzo email di un contatto. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a38ca99a1fe6023a03deb47b758759770}{compare\+To}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} o)
 \begin{DoxyCompactList}\small\item\em Metodo che confronta due contatti in base al cognome(e al nome). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a32151d5f59eac61235ed67816bcd2847}{set\+Numeri}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}} numeri)
+\begin{DoxyCompactList}\small\item\em metodo Set dei numeri di telefono del contatto \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ad0d595e90a82c2c339a74598c4e4b883}{set\+Email}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}} email)
+\begin{DoxyCompactList}\small\item\em metodo set degli indirizzi email del contatto \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa5872d08aed97d0c22af042d1b141654}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a4e0fd469f32610206aa2b4e6b3c9cadf}{equals}} (Object obj)
+\begin{DoxyCompactList}\small\item\em Override del metodo equals. \end{DoxyCompactList}\item 
 String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a2e01fa5fe5602819dff2ee0e86b6f1f5}{to\+String}} ()
 \begin{DoxyCompactList}\small\item\em Metodo che stampa le informazioni del contatto. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -48,7 +48,7 @@ String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactma
 \index{Contatto@{Contatto}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
 \doxysubsubsection{\texorpdfstring{Contatto()}{Contatto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ef2f4a595748bf430b26d01f342a457} 
-it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+Contatto (\begin{DoxyParamCaption}\item[{String}]{nome}{, }\item[{String}]{cognome}{}\end{DoxyParamCaption})}
+it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+Contatto (\begin{DoxyParamCaption}\item[{String}]{nome}{, }\item[{String}]{cognome}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}}
 
 
 
@@ -71,7 +71,7 @@ Viene creata un\textquotesingle{}istanza della classe \doxylink{classit_1_1unisa
 \index{Contatto@{Contatto}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
 \doxysubsubsection{\texorpdfstring{Contatto()}{Contatto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a57f63bd33fc3b32ff43c3c630e8be171} 
-it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+Contatto (\begin{DoxyParamCaption}\item[{String}]{nome}{, }\item[{String}]{cognome}{, }\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}}}]{numeri}{, }\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}}}]{email}{}\end{DoxyParamCaption})}
+it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+Contatto (\begin{DoxyParamCaption}\item[{String}]{nome}{, }\item[{String}]{cognome}{, }\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}}}]{numeri}{, }\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}}}]{email}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}}
 
 
 
@@ -153,6 +153,8 @@ int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+compare\+T
 
 Metodo che confronta due contatti in base al cognome(e al nome). 
 
+I contatti senza cognome vengono messi all\textquotesingle{}inizio della lista. Il confronto è fatto per ordine alfabetico.
+
 
 \begin{DoxyParams}{Parameters}
 {\em o} & Oggetto della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}. \\
@@ -161,48 +163,24 @@ Metodo che confronta due contatti in base al cognome(e al nome).
 \begin{DoxyReturn}{Returns}
 Risultato del confronto. 
 \end{DoxyReturn}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6952dde6d9907cf6c8ce6c3d51462539}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!eliminaEmail@{eliminaEmail}}
-\index{eliminaEmail@{eliminaEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
-\doxysubsubsection{\texorpdfstring{eliminaEmail()}{eliminaEmail()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6952dde6d9907cf6c8ce6c3d51462539} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+elimina\+Email (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a4e0fd469f32610206aa2b4e6b3c9cadf}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!equals@{equals}}
+\index{equals@{equals}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a4e0fd469f32610206aa2b4e6b3c9cadf} 
+boolean it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj}{}\end{DoxyParamCaption})}
 
 
 
-Metodo che elimina un indirizzo email di un contatto. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em index} & Indice dell\textquotesingle{}array di email presenti nel contatto.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un indirizzo email presente nella lista del contatto. 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondition}
-L\textquotesingle{}email indicata viene eliminata. 
-\end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ac3bfe877dd1f23d0f95cd1e7c8b48147}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!eliminaNumero@{eliminaNumero}}
-\index{eliminaNumero@{eliminaNumero}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
-\doxysubsubsection{\texorpdfstring{eliminaNumero()}{eliminaNumero()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ac3bfe877dd1f23d0f95cd1e7c8b48147} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+elimina\+Numero (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
-
-
-
-Metodo che elimina un numero di un contatto. 
+Override del metodo equals. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em index} & Indice dell\textquotesingle{}array di numeri presenti nel contatto.\\
+{\em obj} & Oggetto di confronto \\
 \hline
 \end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un numero presente nella lista del contatto. 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondition}
-Il numero indicato viene eliminato. 
-\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+risultato di uguaglianza tra due contatti 
+\end{DoxyReturn}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a0f7506bf36678fc288b1a14623ff8592}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!getCognome@{getCognome}}
 \index{getCognome@{getCognome}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
 \doxysubsubsection{\texorpdfstring{getCognome()}{getCognome()}}
@@ -214,7 +192,7 @@ String it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+get\+Co
 Metodo get del Cognome. 
 
 \begin{DoxyReturn}{Returns}
-cognome Restituisce il cognome del contatto. 
+Restituisce il cognome del contatto. 
 \end{DoxyReturn}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a28cca21971b3c4a53f72b4d1341a7f92}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!getEmail@{getEmail}}
 \index{getEmail@{getEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
@@ -227,7 +205,7 @@ cognome Restituisce il cognome del contatto.
 Metodo get delle \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}. 
 
 \begin{DoxyReturn}{Returns}
-email Restituisce le email del contatto. 
+Restituisce le email del contatto. 
 \end{DoxyReturn}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a4004d41917cbdaffca399b10fd584d43}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!getNome@{getNome}}
 \index{getNome@{getNome}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
@@ -240,7 +218,7 @@ String it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+get\+No
 Metodo get del Nome. 
 
 \begin{DoxyReturn}{Returns}
-nome Restituisce il nome del contatto. 
+Restituisce il nome del contatto. 
 \end{DoxyReturn}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_afbcd165f4c4e356a512f9bbf1b106ee6}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!getNumeri@{getNumeri}}
 \index{getNumeri@{getNumeri}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
@@ -253,63 +231,22 @@ nome Restituisce il nome del contatto.
 Metodo get dei Numeri. 
 
 \begin{DoxyReturn}{Returns}
-numeri Restituisce i numeri del contatto. 
+Restituisce i numeri del contatto. 
 \end{DoxyReturn}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ab455e700b0c8253f771ccb2b5e823b8b}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!modificaEmail@{modificaEmail}}
-\index{modificaEmail@{modificaEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
-\doxysubsubsection{\texorpdfstring{modificaEmail()}{modificaEmail()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ab455e700b0c8253f771ccb2b5e823b8b} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+modifica\+Email (\begin{DoxyParamCaption}\item[{String}]{email}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa5872d08aed97d0c22af042d1b141654}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa5872d08aed97d0c22af042d1b141654} 
+int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-
-
-Metodo che modifica un indirizzo email di un contatto. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em email} & \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email} del contatto. \\
-\hline
-{\em index} & Indice dell\textquotesingle{}array di email presenti nel contatto.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un indirizzo email presente nella lista del contatto. 
-
-Viene fornita una stringa non nulla. 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondition}
-L\textquotesingle{}email indicata viene modificata. 
-\end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6f6606aad5da0aec4561a879b05391c7}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!modificaNumero@{modificaNumero}}
-\index{modificaNumero@{modificaNumero}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
-\doxysubsubsection{\texorpdfstring{modificaNumero()}{modificaNumero()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a6f6606aad5da0aec4561a879b05391c7} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+modifica\+Numero (\begin{DoxyParamCaption}\item[{String}]{numero}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
-
-
-
-Metodo che modifica un numero di un contatto. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em numero} & Numero del contatto. \\
-\hline
-{\em index} & Indice dell\textquotesingle{}array di numeri presenti nel contatto.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un numero presente nella lista del contatto. 
-
-Viene fornita una stringa non nulla. 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondition}
-Il numero indicato viene modificato. 
-\end{DoxyPostcond}
+@metodo Override del metodo hash\+Code \begin{DoxyReturn}{Returns}
+valore hash del contatto 
+\end{DoxyReturn}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa4f2489d9750b92cbe75152adcfcda5a}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!setCognome@{setCognome}}
 \index{setCognome@{setCognome}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
 \doxysubsubsection{\texorpdfstring{setCognome()}{setCognome()}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_aa4f2489d9750b92cbe75152adcfcda5a} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Cognome (\begin{DoxyParamCaption}\item[{String}]{cognome}{}\end{DoxyParamCaption})}
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Cognome (\begin{DoxyParamCaption}\item[{String}]{cognome}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}}
 
 
 
@@ -321,16 +258,36 @@ Metodo set del Cognome.
 \hline
 \end{DoxyParams}
 \begin{DoxyPrecond}{Precondition}
-Viene fornita una stringa non nulla. 
+Viene fornita una stringa non nulla, , se il nome è una stringa nulla. 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondition}
-Viene impostato il cognome del contatto. 
+Viene impostato il cognome del contatto.
 \end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nominativo\+Assente\+Exception} & eccezione lanciata se nome e cognome sono assenti \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ad0d595e90a82c2c339a74598c4e4b883}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_ad0d595e90a82c2c339a74598c4e4b883} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Email (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_email}{Email}}}]{email}{}\end{DoxyParamCaption})}
+
+
+
+metodo set degli indirizzi email del contatto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ee4a6768e027e40e078e6a767473497}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!setNome@{setNome}}
 \index{setNome@{setNome}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
 \doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a5ee4a6768e027e40e078e6a767473497} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Nome (\begin{DoxyParamCaption}\item[{String}]{nome}{}\end{DoxyParamCaption})}
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Nome (\begin{DoxyParamCaption}\item[{String}]{nome}{}\end{DoxyParamCaption}) throws \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}}
 
 
 
@@ -342,10 +299,33 @@ Metodo set del Nome.
 \hline
 \end{DoxyParams}
 \begin{DoxyPrecond}{Precondition}
-Viene fornita una stringa non nulla. 
+Viene fornita una stringa non nulla, se il cognome è una stringa nulla. 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondition}
 Viene impostato il nome del contatto. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nominativo\+Assente\+Exception} & eccezione lanciata se nome e cognome sono assenti \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a32151d5f59eac61235ed67816bcd2847}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!setNumeri@{setNumeri}}
+\index{setNumeri@{setNumeri}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}
+\doxysubsubsection{\texorpdfstring{setNumeri()}{setNumeri()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a32151d5f59eac61235ed67816bcd2847} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Contatto.\+set\+Numeri (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}}}]{numeri}{}\end{DoxyParamCaption})}
+
+
+
+metodo Set dei numeri di telefono del contatto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeri} & La lista dei numeri di telefono passata come parametro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+la lista di numeri del contatto è sostituita da quella passata come parametro. 
 \end{DoxyPostcond}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto_a2e01fa5fe5602819dff2ee0e86b6f1f5}\index{it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}!toString@{toString}}
 \index{toString@{toString}!it.unisa.softeng.rubricagrp17.contactmanager.Contatto@{it.unisa.softeng.rubricagrp17.contactmanager.Contatto}}

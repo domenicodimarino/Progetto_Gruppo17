@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['setcognome_0',['setCognome',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html#aa4f2489d9750b92cbe75152adcfcda5a',1,'it::unisa::softeng::rubricagrp17::contactmanager::Contatto']]],
-  ['setnome_1',['setNome',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html#a5ee4a6768e027e40e078e6a767473497',1,'it::unisa::softeng::rubricagrp17::contactmanager::Contatto']]],
-  ['sort_2',['sort',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica.html#ae19d55e14aa0b5033d55971e5653a7c2',1,'it::unisa::softeng::rubricagrp17::contactmanager::Rubrica']]]
+  ['ricercacontatto_0',['ricercaContatto',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica.html#ae6825d046e6f2430d87ec79404066286',1,'it::unisa::softeng::rubricagrp17::contactmanager::Rubrica']]],
+  ['rubrica_1',['Rubrica',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica.html#aaffcfeaeb49baa4d2b70f753e8a88fc8',1,'it::unisa::softeng::rubricagrp17::contactmanager::Rubrica']]],
+  ['rubricaexception_2',['RubricaException',['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_rubrica_exception.html#afc1856957499d107cd3fd6414f9dc672',1,'it.unisa.softeng.rubricagrp17.exceptions.RubricaException.RubricaException()'],['../classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_rubrica_exception.html#acc5178f3b7b89c4415d38513a660b7cd',1,'it.unisa.softeng.rubricagrp17.exceptions.RubricaException.RubricaException(String msg)']]]
 ];

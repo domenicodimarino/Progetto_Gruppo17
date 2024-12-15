@@ -10,7 +10,12 @@ Inheritance diagram for it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubr
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller_a07fcdcd4fd62b06ed843954fe9b016c6}{initialize}} (URL url, Resource\+Bundle rb)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inizializza i campi del modulo con i dati del contatto corrente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller_ac77ae8bab05216a388dbab3aa0c292e9}{set\+Contatto\+Corrente}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} contatto)
+\begin{DoxyCompactList}\small\item\em Imposta il contatto corrente. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -20,7 +25,37 @@ void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller_a07fcdcd4fd62b06ed843954fe9b016c6} 
 void it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubrica\+Secondary\+Controller.\+initialize (\begin{DoxyParamCaption}\item[{URL}]{url}{, }\item[{Resource\+Bundle}]{rb}{}\end{DoxyParamCaption})}
 
-Initializes the controller class. 
+
+
+Inizializza i campi del modulo con i dati del contatto corrente. 
+
+Questo metodo viene eseguito all\textquotesingle{}avvio della vista e popola i vari campi di testo (nome, cognome, numeri di telefono, e email) con i valori del contatto corrente, se presente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & URL di origine per la vista. \\
+\hline
+{\em rb} & Il resource bundle associato alla vista. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller_ac77ae8bab05216a388dbab3aa0c292e9}\index{it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController}!setContattoCorrente@{setContattoCorrente}}
+\index{setContattoCorrente@{setContattoCorrente}!it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController@{it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController}}
+\doxysubsubsection{\texorpdfstring{setContattoCorrente()}{setContattoCorrente()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller_ac77ae8bab05216a388dbab3aa0c292e9} 
+static void it.\+unisa.\+softeng.\+rubricagrp17.\+controllers.\+Rubrica\+Secondary\+Controller.\+set\+Contatto\+Corrente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}}}]{contatto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Imposta il contatto corrente. 
+
+Questo metodo consente di impostare il contatto corrente, che può essere utilizzato in altre parti dell\textquotesingle{}applicazione per accedere o modificare i dettagli del contatto selezionato.
+
+
+\begin{DoxyParams}{Parameters}
+{\em contatto} & Il contatto da impostare come contatto corrente. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

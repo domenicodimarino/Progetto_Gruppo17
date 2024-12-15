@@ -7,12 +7,18 @@
 \begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aa089ed30f2b28a5b063822d10275acc2}{aggiungi\+Numero}} (String numero)
 \begin{DoxyCompactList}\small\item\em Metodo che aggiunge un numero alle informazioni del contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aa4bc60eae61245bb0c1a2a15608fe48d}{modifica\+Numero}} (String numero, int index)
-\begin{DoxyCompactList}\small\item\em Metodo che modifica un numero di un contatto. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a8dfedf44a93db2032a5fc99cf4140ff8}{rimuovi\+Numero}} (int index)
-\begin{DoxyCompactList}\small\item\em Metodo che rimuove un numero di un contatto. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a48da2b27fa2a723031cd25deb8e69b64}{get\+Cont\+Numeri}} ()
-\begin{DoxyCompactList}\small\item\em Metodo che restituisce la quantità di numeri del contatto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a43181bb5d5770f06f95817bf8371c699}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Metodo get per la quantità di numeri telefonici del contatto. \end{DoxyCompactList}\item 
+List$<$ String $>$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a780e7d958eacba37514a656ca95cf83b}{get\+Numeri}} ()
+\begin{DoxyCompactList}\small\item\em Metodo che restituisce la lista di numeri. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a07fd42a21c56218bc4e501399039197e}{get\+Singolo\+Numero}} (int index)
+\begin{DoxyCompactList}\small\item\em Metodo che restituisce un singolo numero dalla lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a5ffb21f3560069bf9b8ab28a09ba3453}{set\+Numeri}} (List$<$ String $>$ numeri)
+\begin{DoxyCompactList}\small\item\em Metodo set del campo numeri. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a1b092316406bea8a5408b9313714741b}{hash\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Override del metodo hash\+Code. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aab42160ec7a083fb7d2f0dea1f2b8593}{equals}} (Object obj)
+\begin{DoxyCompactList}\small\item\em Override del metodo equals. \end{DoxyCompactList}\item 
 String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_af16b9a23247f963e13ad4c9e87f06959}{to\+String}} ()
 \begin{DoxyCompactList}\small\item\em Metodo che restituisce i numeri sotto forma di stringa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -57,64 +63,100 @@ Il contatto ha meno di tre numeri.
 \begin{DoxyPostcond}{Postcondition}
 Viene aggiunto il numero al contatto. 
 \end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a48da2b27fa2a723031cd25deb8e69b64}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!getContNumeri@{getContNumeri}}
-\index{getContNumeri@{getContNumeri}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
-\doxysubsubsection{\texorpdfstring{getContNumeri()}{getContNumeri()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a48da2b27fa2a723031cd25deb8e69b64} 
-int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+get\+Cont\+Numeri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aab42160ec7a083fb7d2f0dea1f2b8593}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!equals@{equals}}
+\index{equals@{equals}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aab42160ec7a083fb7d2f0dea1f2b8593} 
+boolean it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj}{}\end{DoxyParamCaption})}
 
 
 
-Metodo che restituisce la quantità di numeri del contatto. 
+Override del metodo equals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Oggetto \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono} di confronto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Il risultato del confronto tra due oggetti \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}. 
+\end{DoxyReturn}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a780e7d958eacba37514a656ca95cf83b}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!getNumeri@{getNumeri}}
+\index{getNumeri@{getNumeri}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{getNumeri()}{getNumeri()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a780e7d958eacba37514a656ca95cf83b} 
+List$<$ String $>$ it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+get\+Numeri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metodo che restituisce la lista di numeri. 
 
 \begin{DoxyReturn}{Returns}
-Quantità di numeri. 
+La lista di numeri. 
 \end{DoxyReturn}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aa4bc60eae61245bb0c1a2a15608fe48d}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!modificaNumero@{modificaNumero}}
-\index{modificaNumero@{modificaNumero}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
-\doxysubsubsection{\texorpdfstring{modificaNumero()}{modificaNumero()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_aa4bc60eae61245bb0c1a2a15608fe48d} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+modifica\+Numero (\begin{DoxyParamCaption}\item[{String}]{numero}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a07fd42a21c56218bc4e501399039197e}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!getSingoloNumero@{getSingoloNumero}}
+\index{getSingoloNumero@{getSingoloNumero}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{getSingoloNumero()}{getSingoloNumero()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a07fd42a21c56218bc4e501399039197e} 
+String it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+get\+Singolo\+Numero (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
 
 
 
-Metodo che modifica un numero di un contatto. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em numero} & Numero del contatto. \\
-\hline
-{\em index} & Indice dell\textquotesingle{}array di numeri presenti nel contatto.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un numero presente nella lista del contatto. 
-
-Viene fornita una stringa non nulla. 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondition}
-Il numero indicato viene modificato. 
-\end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a8dfedf44a93db2032a5fc99cf4140ff8}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!rimuoviNumero@{rimuoviNumero}}
-\index{rimuoviNumero@{rimuoviNumero}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
-\doxysubsubsection{\texorpdfstring{rimuoviNumero()}{rimuoviNumero()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a8dfedf44a93db2032a5fc99cf4140ff8} 
-void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+rimuovi\+Numero (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
-
-
-
-Metodo che rimuove un numero di un contatto. 
+Metodo che restituisce un singolo numero dalla lista. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em index} & Indice dell\textquotesingle{}array di numeri presenti nel contatto.\\
+{\em index} & L\textquotesingle{}indice del singolo numero presente nella lista.\\
 \hline
 \end{DoxyParams}
-\begin{DoxyPrecond}{Precondition}
-Indice deve corrisponde a un numero presente nella lista del contatto. 
-\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Il numero corrispondente all\textquotesingle{}indice passato come parametro. 
+\end{DoxyReturn}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a43181bb5d5770f06f95817bf8371c699}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!getSize@{getSize}}
+\index{getSize@{getSize}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a43181bb5d5770f06f95817bf8371c699} 
+int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metodo get per la quantità di numeri telefonici del contatto. 
+
+\begin{DoxyReturn}{Returns}
+La quantità di numeri telefonici del contatto. 
+\end{DoxyReturn}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a1b092316406bea8a5408b9313714741b}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a1b092316406bea8a5408b9313714741b} 
+int it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Override del metodo hash\+Code. 
+
+\begin{DoxyReturn}{Returns}
+Valore hash di \doxylink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono}{Telefono}. 
+\end{DoxyReturn}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a5ffb21f3560069bf9b8ab28a09ba3453}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!setNumeri@{setNumeri}}
+\index{setNumeri@{setNumeri}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}
+\doxysubsubsection{\texorpdfstring{setNumeri()}{setNumeri()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_a5ffb21f3560069bf9b8ab28a09ba3453} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Telefono.\+set\+Numeri (\begin{DoxyParamCaption}\item[{List$<$ String $>$}]{numeri}{}\end{DoxyParamCaption})}
+
+
+
+Metodo set del campo numeri. 
+
+Sostituisce la lista di numeri presente con la lista passata come parametro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em numeri} & La nuova lista di numeri.\\
+\hline
+\end{DoxyParams}
 \begin{DoxyPostcond}{Postcondition}
-Il numero indicato viene eliminato. 
+La lista è aggiornata e i valori corrispondono a quelli passati come parametro. 
 \end{DoxyPostcond}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_telefono_af16b9a23247f963e13ad4c9e87f06959}\index{it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}!toString@{toString}}
 \index{toString@{toString}!it.unisa.softeng.rubricagrp17.contactmanager.Telefono@{it.unisa.softeng.rubricagrp17.contactmanager.Telefono}}

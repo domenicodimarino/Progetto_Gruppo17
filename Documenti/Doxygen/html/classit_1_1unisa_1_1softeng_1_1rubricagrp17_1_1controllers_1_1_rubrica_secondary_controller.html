@@ -90,6 +90,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1controllers_1_1_rubrica_secondary_controller-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController Class Reference</div></div>
 </div><!--header-->
@@ -104,7 +105,14 @@ Inheritance diagram for it.unisa.softeng.rubricagrp17.controllers.RubricaSeconda
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a07fcdcd4fd62b06ed843954fe9b016c6" id="r_a07fcdcd4fd62b06ed843954fe9b016c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07fcdcd4fd62b06ed843954fe9b016c6">initialize</a> (URL url, ResourceBundle rb)</td></tr>
+<tr class="memdesc:a07fcdcd4fd62b06ed843954fe9b016c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializza i campi del modulo con i dati del contatto corrente.  <br /></td></tr>
 <tr class="separator:a07fcdcd4fd62b06ed843954fe9b016c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac77ae8bab05216a388dbab3aa0c292e9" id="r_ac77ae8bab05216a388dbab3aa0c292e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac77ae8bab05216a388dbab3aa0c292e9">setContattoCorrente</a> (<a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a> contatto)</td></tr>
+<tr class="memdesc:ac77ae8bab05216a388dbab3aa0c292e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposta il contatto corrente.  <br /></td></tr>
+<tr class="separator:ac77ae8bab05216a388dbab3aa0c292e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a07fcdcd4fd62b06ed843954fe9b016c6" name="a07fcdcd4fd62b06ed843954fe9b016c6"></a>
@@ -125,7 +133,50 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializes the controller class. </p>
+
+<p>Inizializza i campi del modulo con i dati del contatto corrente. </p>
+<p>Questo metodo viene eseguito all'avvio della vista e popola i vari campi di testo (nome, cognome, numeri di telefono, e email) con i valori del contatto corrente, se presente.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>URL di origine per la vista. </td></tr>
+    <tr><td class="paramname">rb</td><td>Il resource bundle associato alla vista. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac77ae8bab05216a388dbab3aa0c292e9" name="ac77ae8bab05216a388dbab3aa0c292e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77ae8bab05216a388dbab3aa0c292e9">&#9670;&#160;</a></span>setContattoCorrente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController.setContattoCorrente </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto.html">Contatto</a></td>          <td class="paramname"><span class="paramname"><em>contatto</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Imposta il contatto corrente. </p>
+<p>Questo metodo consente di impostare il contatto corrente, che può essere utilizzato in altre parti dell'applicazione per accedere o modificare i dettagli del contatto selezionato.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contatto</td><td>Il contatto da impostare come contatto corrente. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

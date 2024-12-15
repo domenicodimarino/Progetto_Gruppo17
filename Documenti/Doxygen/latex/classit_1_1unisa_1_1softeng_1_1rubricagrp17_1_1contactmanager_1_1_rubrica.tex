@@ -11,21 +11,23 @@ boolean \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactm
 \begin{DoxyCompactList}\small\item\em Metodo che modifica un contatto in rubrica. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a5b102a43dd8d6a50b684f96f84e69b12}{elimina\+Contatto}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} c)
 \begin{DoxyCompactList}\small\item\em Metodo che elimina un contatto dalla rubrica. \end{DoxyCompactList}\item 
-List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a3f2d57e8456706e461cbb77a991fb4ab}{ricerca\+Contatto}} (String sottostringa)
+List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae6825d046e6f2430d87ec79404066286}{ricerca\+Contatto}} (String cerca)
 \begin{DoxyCompactList}\small\item\em Metodo che consente la ricerca di un contatto contenente una determinata sottostringa in rubrica. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae19d55e14aa0b5033d55971e5653a7c2}{sort}} ()
 \begin{DoxyCompactList}\small\item\em Metodo che dispone i contatti in ordine alfabetico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_acb44966458c063e2820a4f02e117c880}{esporta\+Rubrica}} (String filename)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Metodo che permette l\textquotesingle{}esportazione della rubrica su un file. \end{DoxyCompactList}\item 
 List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a62c06df63ae65e13c0ef986dacac45bd}{get\+Contatti}} ()
 \begin{DoxyCompactList}\small\item\em Metodo get della lista dei contatti. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae4db3722a24b58c48e8692ccbe731a31}{set\+Contatti}} (List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ contatti)
+\begin{DoxyCompactList}\small\item\em Metodo set della lista di contatti. \end{DoxyCompactList}\item 
 String \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a0d64d3162b1b0e3c7711e1651919171c}{to\+String}} ()
 \begin{DoxyCompactList}\small\item\em Metodo che restituisce le informazioni della rubrica sotto forma di stringa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}} \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a1aad578444dd05975530035cb3a913df}{importa\+Rubrica}} (String filename)  throws IOException,\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_file_non_valido_exception}{File\+Non\+Valido\+Exception}}
-\begin{DoxyCompactList}\small\item\em Metodo che permette l\textquotesingle{}importazione della rubrica da file. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_aaaca51a815cb5f86663d5e3270edf8e4}{esporta\+Rubrica}} (\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}} r, String filename)  throws IOException 
-\begin{DoxyCompactList}\small\item\em Metodo che permette l\textquotesingle{}esportazione della rubrica su un file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}} \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a1aad578444dd05975530035cb3a913df}{importa\+Rubrica}} (String filename)  throws IOException,\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_file_non_valido_exception}{File\+Non\+Valido\+Exception}}, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}
+\begin{DoxyCompactList}\small\item\em Metodo che permette l\textquotesingle{}importazione della rubrica da file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -97,11 +99,11 @@ Metodo che elimina un contatto dalla rubrica.
 \begin{DoxyPostcond}{Postcondition}
 Il contatto selezionato viene eliminato. 
 \end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_aaaca51a815cb5f86663d5e3270edf8e4}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!esportaRubrica@{esportaRubrica}}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_acb44966458c063e2820a4f02e117c880}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!esportaRubrica@{esportaRubrica}}
 \index{esportaRubrica@{esportaRubrica}!it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}}
 \doxysubsubsection{\texorpdfstring{esportaRubrica()}{esportaRubrica()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_aaaca51a815cb5f86663d5e3270edf8e4} 
-static void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+esporta\+Rubrica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}}}]{r}{, }\item[{String}]{filename}{}\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_acb44966458c063e2820a4f02e117c880} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+esporta\+Rubrica (\begin{DoxyParamCaption}\item[{String}]{filename}{}\end{DoxyParamCaption}) throws IOException}
 
 
 
@@ -144,7 +146,7 @@ Restituisce la lista dei contatti presenti in rubrica.
 \index{importaRubrica@{importaRubrica}!it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}}
 \doxysubsubsection{\texorpdfstring{importaRubrica()}{importaRubrica()}}
 {\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a1aad578444dd05975530035cb3a913df} 
-static \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}} it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+importa\+Rubrica (\begin{DoxyParamCaption}\item[{String}]{filename}{}\end{DoxyParamCaption}) throws IOException,\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_file_non_valido_exception}{File\+Non\+Valido\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+static \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica}{Rubrica}} it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+importa\+Rubrica (\begin{DoxyParamCaption}\item[{String}]{filename}{}\end{DoxyParamCaption}) throws IOException,\mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_file_non_valido_exception}{File\+Non\+Valido\+Exception}}, \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1exceptions_1_1_nominativo_assente_exception}{Nominativo\+Assente\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -214,11 +216,11 @@ Il contatto viene modificato in caso il metodo restituisce true.
 
 Il contatto non viene modificato in caso il metodo restituisce false. 
 \end{DoxyPostcond}
-\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a3f2d57e8456706e461cbb77a991fb4ab}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!ricercaContatto@{ricercaContatto}}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae6825d046e6f2430d87ec79404066286}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!ricercaContatto@{ricercaContatto}}
 \index{ricercaContatto@{ricercaContatto}!it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}}
 \doxysubsubsection{\texorpdfstring{ricercaContatto()}{ricercaContatto()}}
-{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_a3f2d57e8456706e461cbb77a991fb4ab} 
-List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+ricerca\+Contatto (\begin{DoxyParamCaption}\item[{String}]{sottostringa}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae6825d046e6f2430d87ec79404066286} 
+List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$ it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+ricerca\+Contatto (\begin{DoxyParamCaption}\item[{String}]{cerca}{}\end{DoxyParamCaption})}
 
 
 
@@ -226,7 +228,7 @@ Metodo che consente la ricerca di un contatto contenente una determinata sottost
 
 
 \begin{DoxyParams}{Parameters}
-{\em sottostringa} & Sottostringa iniziale(o completa) del nome e/o del cognome di un contatto. \\
+{\em cerca} & Sottostringa iniziale(o completa) del nome e/o del cognome di un contatto. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -239,6 +241,26 @@ La sottostringa inserita deve corrispondere interamente o in parte(solo i caratt
 Se ci sono contatti corrispondenti alla sottostringa inserita, viene restituita una lista che li contiene. 
 
 L\textquotesingle{}ordine della lista rimane alfabetico. 
+\end{DoxyPostcond}
+\Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae4db3722a24b58c48e8692ccbe731a31}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!setContatti@{setContatti}}
+\index{setContatti@{setContatti}!it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}}
+\doxysubsubsection{\texorpdfstring{setContatti()}{setContatti()}}
+{\footnotesize\ttfamily \label{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae4db3722a24b58c48e8692ccbe731a31} 
+void it.\+unisa.\+softeng.\+rubricagrp17.\+contactmanager.\+Rubrica.\+set\+Contatti (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_contatto}{Contatto}} $>$}]{contatti}{}\end{DoxyParamCaption})}
+
+
+
+Metodo set della lista di contatti. 
+
+Sostituisce la lista già presente con una passata come parametro
+
+
+\begin{DoxyParams}{Parameters}
+{\em contatti} & La lista di contatti passata come parametro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La lista è sostituita. 
 \end{DoxyPostcond}
 \Hypertarget{classit_1_1unisa_1_1softeng_1_1rubricagrp17_1_1contactmanager_1_1_rubrica_ae19d55e14aa0b5033d55971e5653a7c2}\index{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}!sort@{sort}}
 \index{sort@{sort}!it.unisa.softeng.rubricagrp17.contactmanager.Rubrica@{it.unisa.softeng.rubricagrp17.contactmanager.Rubrica}}
