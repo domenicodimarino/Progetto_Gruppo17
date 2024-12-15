@@ -107,7 +107,7 @@ public class Email {
     if(this == obj){
         return true;
     }
-    if(this == null){
+    if(obj == null){
         return false;
     }
     if(getClass() != obj.getClass()){
