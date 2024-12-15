@@ -29,7 +29,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("RubricaPrimaryView"), 750, 450);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -82,7 +82,7 @@ public class App extends Application {
      * @throws IOException
      * @brief Esecuzione dell'applicazione.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         rubrica= new Rubrica("rubrica");
         launch();
     }

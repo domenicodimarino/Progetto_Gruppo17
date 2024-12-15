@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController">
+<AnchorPane id="AnchorPane" maxHeight="450.0" maxWidth="750.0" minHeight="450.0" minWidth="750.0" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unisa.softeng.rubricagrp17.controllers.RubricaSecondaryController">
    <children>
       <SplitPane dividerPositions="0.29264214046822745" layoutX="200.0" layoutY="120.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -18,12 +18,12 @@
                      <children>
                         <TextField fx:id="numberFieldCreate">
                            <VBox.margin>
-                              <Insets left="10.0" right="10.0" top="20.0" />
+                              <Insets left="10.0" right="10.0" top="30.0" />
                            </VBox.margin>
                         </TextField>
-                        <Button fx:id="addNumber" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" text="Aggiungi numero">
+                        <Button fx:id="addNumber" mnemonicParsing="false" onAction="#aggiungiNumero" prefHeight="27.0" prefWidth="120.0" text="Aggiungi numero">
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets left="40.0" top="10.0" />
                            </VBox.margin>
                         </Button>
                         <TextField fx:id="emailFieldCreate">
@@ -31,19 +31,24 @@
                               <Insets left="10.0" right="10.0" top="20.0" />
                            </VBox.margin>
                         </TextField>
-                        <Button fx:id="addEmail" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" text="Aggiungi email">
+                        <Button fx:id="addEmail" mnemonicParsing="false" onAction="#aggiungiEmail" prefHeight="27.0" prefWidth="120.0" text="Aggiungi email">
                            <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
+                              <Insets left="40.0" top="10.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="exitButton" mnemonicParsing="false" text="Annulla operazione">
+                        <Text fx:id="disclaimer" strokeType="OUTSIDE" strokeWidth="0.0" text="In modalità di visualizzazione, non è possibile apportare modifiche al contatto. Se desideri farlo, clicca su &quot;Annulla operazione&quot;, seleziona il contatto e clicca sul tasto &quot;Modifica&quot;." textAlignment="CENTER" wrappingWidth="197.35791015625">
                            <VBox.margin>
-                              <Insets left="21.0" top="120.0" />
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="exitButton" mnemonicParsing="false" onAction="#annullaOperazione" text="Annulla operazione">
+                           <VBox.margin>
+                              <Insets left="40.0" top="50.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="saveButton" mnemonicParsing="false" text="Salva modifiche">
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#salvaContatto" text="Salva modifiche">
                            <VBox.margin>
-                              <Insets left="30.0" top="10.0" />
+                              <Insets left="48.0" top="10.0" />
                            </VBox.margin>
                         </Button>
                      </children>
@@ -56,7 +61,7 @@
                      <children>
                         <Pane prefHeight="56.0" prefWidth="409.0">
                            <children>
-                              <Label fx:id="informationLabel" alignment="CENTER" layoutX="83.0" layoutY="15.0" text="Informazioni contatto" textAlignment="CENTER">
+                              <Label fx:id="informationLabel" alignment="CENTER" layoutX="136.0" layoutY="15.0" text="Informazioni contatto" textAlignment="CENTER">
                                  <font>
                                     <Font name="Arial Bold" size="24.0" />
                                  </font>
@@ -96,6 +101,38 @@
                                  </HBox.margin>
                               </TextField>
                            </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="51.0" prefWidth="480.0">
+                           <children>
+                              <Label text="Numeri">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="70.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Email">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets left="30.0" />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="170.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
                         </HBox>
                         <HBox prefHeight="189.0" prefWidth="409.0">
                            <children>
@@ -132,6 +169,9 @@
                                        </VBox.margin>
                                     </TextField>
                                  </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
                               </VBox>
                               <VBox prefHeight="100.0" prefWidth="222.0">
                                  <children>
@@ -169,8 +209,14 @@
                                        </VBox.margin>
                                     </TextField>
                                  </children>
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
                               </VBox>
                            </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
                         </HBox>
                      </children>
                   </VBox>

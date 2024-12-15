@@ -10,9 +10,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 
-<SplitPane dividerPositions="0.2842809364548495" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController">
+<SplitPane dividerPositions="0.2842809364548495" maxHeight="450.0" maxWidth="750.0" minHeight="450.0" minWidth="750.0" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unisa.softeng.rubricagrp17.controllers.RubricaPrimaryController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="190.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="190.0" SplitPane.resizableWithParent="false">
          <children>
             <VBox layoutX="47.0" layoutY="99.0" prefHeight="200.0" prefWidth="100.0" spacing="2.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                <children>
@@ -37,7 +37,7 @@
                         <Insets left="5.0" right="5.0" top="1.0" />
                      </VBox.margin>
                      <padding>
-                        <Insets left="35.0" />
+                        <Insets left="45.0" />
                      </padding>
                   </MenuBar>
                   <Label fx:id="nameLabel" text="Nome">
@@ -60,21 +60,25 @@
                         <Insets top="5.0" />
                      </VBox.margin></Label>
                   <TextField fx:id="emailTextField1" promptText="es. mariorossi@example.it" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Per creare un contatto  con più numeri di telefono e/o indirizzi email, clicca su &quot;Più informazioni&quot;." wrappingWidth="162.375">
+                     <VBox.margin>
+                        <Insets left="5.0" right="10.0" top="20.0" />
+                     </VBox.margin></Text>
                   <HBox prefHeight="50.0" prefWidth="174.0">
                      <children>
                         <Button fx:id="addButton" mnemonicParsing="false" onAction="#aggiungiContatto" text="Crea">
                            <HBox.margin>
-                              <Insets left="9.0" top="10.0" />
+                              <Insets left="10.0" top="4.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" text="Più informazioni">
+                        <Button fx:id="buttonCreazioneContattoCompleto" mnemonicParsing="false" onAction="#creazioneContattoCompleto" text="Più informazioni">
                            <HBox.margin>
-                              <Insets left="9.0" top="10.0" />
+                              <Insets left="9.0" top="4.0" />
                            </HBox.margin>
                         </Button>
                      </children>
                      <VBox.margin>
-                        <Insets top="55.0" />
+                        <Insets left="5.0" top="20.0" />
                      </VBox.margin>
                   </HBox>
                </children>
@@ -93,17 +97,22 @@
                                     <Insets left="10.0" top="20.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="cercaTextField">
+                              <TextField fx:id="cercaTextField" onAction="#ricercaContatto">
                                  <HBox.margin>
                                     <Insets left="10.0" top="15.0" />
                                  </HBox.margin>
                               </TextField>
-                              <Button fx:id="editButton" mnemonicParsing="false" text="Modifica">
+                              <Button fx:id="viewButton" mnemonicParsing="false" onAction="#visualizzaContatto" text="Visualizza">
                                  <HBox.margin>
-                                    <Insets left="80.0" top="15.0" />
+                                    <Insets left="20.0" top="15.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button fx:id="delButton" mnemonicParsing="false" text="Elimina">
+                              <Button fx:id="editButton" mnemonicParsing="false" onAction="#modificaContatto" text="Modifica">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="delButton" mnemonicParsing="false" onAction="#eliminaContatto" text="Elimina">
                                  <HBox.margin>
                                     <Insets left="20.0" top="15.0" />
                                  </HBox.margin>
