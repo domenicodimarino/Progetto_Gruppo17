@@ -228,7 +228,7 @@ public class Rubrica {
      * @pre Filename deve essere una stringa valida.
      * @post La rubrica è contenuta nel file specificato.
      */
-    public void esportaRubrica(Rubrica r, String filename) throws IOException {
+    public void esportaRubrica(String filename) throws IOException {
         try(PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(filename)))){
             pw.println("COGNOME;NOME;TELEFONO1;TELEFONO2;TELEFONO3;EMAIL1;EMAIL2;EMAIL3");
             //bisogna scorrere la collezione
