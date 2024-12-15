@@ -46,7 +46,7 @@ public class Telefono {
      * @return La quantità di numeri telefonici del contatto.
      */
     public int getSize(){
-    return this.numeri.size();
+        return this.numeri.size();
     }
     
     /**
@@ -79,7 +79,7 @@ public class Telefono {
      * @post La lista è aggiornata e i valori corrispondono a quelli passati come parametro.
      */
     public void setNumeri(List<String> numeri){
-    this.numeri=numeri;
+        this.numeri=numeri;
     }
     
     /**
@@ -103,15 +103,13 @@ public class Telefono {
      */
     @Override
     public boolean equals(Object obj){
-    if(this == obj){
-        return true;
-    }
-    if(this == null){
-    return false;
-    }
-    if(getClass() != obj.getClass()){
-    return false;
-    }
+        
+        if(this == obj) return true;
+    
+        if(obj == null) return false;
+    
+        if(getClass() != obj.getClass()) return false;
+        
     final Telefono other = (Telefono)obj;
     if(!Objects.equals(this.numeri,other.numeri)){
         return false;

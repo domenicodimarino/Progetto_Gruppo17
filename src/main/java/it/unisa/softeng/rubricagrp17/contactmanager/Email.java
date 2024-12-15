@@ -47,7 +47,7 @@ public class Email {
      * @return Il numero di indirizzi email del contatto.
      */
     public int getSize(){
-    return this.email.size();
+        return this.email.size();
     }
     
     /**
@@ -56,7 +56,7 @@ public class Email {
      * @return La lista di email.
      */
     public List<String> getEmail(){
-    return email;
+        return email;
     }
     
     /**
@@ -90,9 +90,9 @@ public class Email {
      */
     @Override 
     public int hashCode(){
-    int hash = 7;
-    hash = 19 * hash + Objects.hashCode(this.email);
-    return hash;
+        int hash = 7;
+        hash = 19 * hash + Objects.hashCode(this.email);
+        return hash;
     }
     
     /**
@@ -104,15 +104,13 @@ public class Email {
      */
     @Override
     public boolean equals(Object obj){
-    if(this == obj){
-        return true;
-    }
-    if(obj == null){
-        return false;
-    }
-    if(getClass() != obj.getClass()){
-        return false;
-    }
+        
+        if(this == obj) return true;
+        
+    if(obj == null) return false;
+
+    if(getClass() != obj.getClass()) return false;
+    
     final Email other= (Email) obj;
     if(!Objects.equals(this.email, other.email)){
         return false;
